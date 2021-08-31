@@ -1,0 +1,27 @@
+{
+  "farmaciaApp": {
+    "ventaProducto": {
+      "home": {
+        "title": "Venta Productos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Venta Producto",
+        "createOrEditLabel": "Crear o editar Venta Producto",
+        "notFound": "Ningún Venta Productos encontrado"
+      },
+      "created": "Un nuevo Venta Producto ha sido creado con el identificador {{ param }}",
+      "updated": "Un Venta Producto ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Venta Producto ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Venta Producto {{ id }}?"
+      },
+      "detail": {
+        "title": "Venta Producto"
+      },
+      "id": "ID",
+      "cantidad": "Cantidad",
+      "total": "Total",
+      "producto": "Producto",
+      "venta": "Venta"
+    }
+  }
+}

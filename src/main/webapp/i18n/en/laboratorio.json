@@ -1,0 +1,25 @@
+{
+  "farmaciaApp": {
+    "laboratorio": {
+      "home": {
+        "title": "Laboratorios",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Laboratorio",
+        "createOrEditLabel": "Create or edit a Laboratorio",
+        "notFound": "No Laboratorios found"
+      },
+      "created": "A new Laboratorio is created with identifier {{ param }}",
+      "updated": "A Laboratorio is updated with identifier {{ param }}",
+      "deleted": "A Laboratorio is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Laboratorio {{ id }}?"
+      },
+      "detail": {
+        "title": "Laboratorio"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "producto": "Producto"
+    }
+  }
+}

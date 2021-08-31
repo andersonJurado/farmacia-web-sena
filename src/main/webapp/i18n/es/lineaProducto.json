@@ -1,0 +1,25 @@
+{
+  "farmaciaApp": {
+    "lineaProducto": {
+      "home": {
+        "title": "Linea Productos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Linea Producto",
+        "createOrEditLabel": "Crear o editar Linea Producto",
+        "notFound": "Ningún Linea Productos encontrado"
+      },
+      "created": "Un nuevo Linea Producto ha sido creado con el identificador {{ param }}",
+      "updated": "Un Linea Producto ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Linea Producto ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Linea Producto {{ id }}?"
+      },
+      "detail": {
+        "title": "Linea Producto"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "producto": "Producto"
+    }
+  }
+}

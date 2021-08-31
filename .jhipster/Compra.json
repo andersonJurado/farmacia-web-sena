@@ -1,0 +1,39 @@
+{
+  "name": "Compra",
+  "fields": [
+    {
+      "fieldName": "nroFactura",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fecha",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "compraProducto",
+      "otherEntityRelationshipName": "compra",
+      "relationshipName": "compraProducto"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "proveedor",
+      "otherEntityRelationshipName": "compra",
+      "relationshipName": "proveedor",
+      "otherEntityField": "nombre"
+    }
+  ],
+  "entityTableName": "compra",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210831094829"
+}

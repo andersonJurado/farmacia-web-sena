@@ -1,0 +1,39 @@
+{
+  "name": "VentaProducto",
+  "fields": [
+    {
+      "fieldName": "cantidad",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "total",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "producto",
+      "otherEntityRelationshipName": "ventaProducto",
+      "relationshipName": "producto",
+      "otherEntityField": "nombreProducto"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "venta",
+      "otherEntityRelationshipName": "ventaProducto",
+      "relationshipName": "venta",
+      "otherEntityField": "nroFactura"
+    }
+  ],
+  "entityTableName": "venta_producto",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210831094840"
+}

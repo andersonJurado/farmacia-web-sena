@@ -1,0 +1,39 @@
+{
+  "name": "Venta",
+  "fields": [
+    {
+      "fieldName": "nroFactura",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fecha",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "ventaProducto",
+      "otherEntityRelationshipName": "venta",
+      "relationshipName": "ventaProducto"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "venta",
+      "relationshipName": "cliente",
+      "otherEntityField": "primerNombre"
+    }
+  ],
+  "entityTableName": "venta",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210831094839"
+}

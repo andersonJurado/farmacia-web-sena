@@ -1,0 +1,34 @@
+{
+  "farmaciaApp": {
+    "producto": {
+      "home": {
+        "title": "Productos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Producto",
+        "createOrEditLabel": "Crear o editar Producto",
+        "notFound": "Ningún Productos encontrado"
+      },
+      "created": "Un nuevo Producto ha sido creado con el identificador {{ param }}",
+      "updated": "Un Producto ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Producto ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Producto {{ id }}?"
+      },
+      "detail": {
+        "title": "Producto"
+      },
+      "id": "ID",
+      "nombreProducto": "Nombre Producto",
+      "cantidad": "Cantidad",
+      "iva": "Iva",
+      "precioUdsVenta": "Precio Uds Venta",
+      "margenDeGanancia": "Margen De Ganancia",
+      "invima": "Invima",
+      "presentacion": "Presentacion",
+      "laboratorio": "Laboratorio",
+      "lineaProducto": "Linea Producto",
+      "compraProducto": "Compra Producto",
+      "ventaProducto": "Venta Producto"
+    }
+  }
+}

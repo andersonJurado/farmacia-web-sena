@@ -1,0 +1,41 @@
+{
+  "name": "Municipio",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "departamento",
+      "otherEntityRelationshipName": "municipio",
+      "relationshipName": "departamento",
+      "otherEntityField": "nombre"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "municipio",
+      "relationshipName": "cliente"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "proveedor",
+      "otherEntityRelationshipName": "municpio",
+      "relationshipName": "proveedor"
+    }
+  ],
+  "entityTableName": "municipio",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210831094834"
+}

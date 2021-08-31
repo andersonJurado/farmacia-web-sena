@@ -1,0 +1,28 @@
+{
+  "name": "Departamento",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "municipio",
+      "otherEntityRelationshipName": "departamento",
+      "relationshipName": "municipio"
+    }
+  ],
+  "entityTableName": "departamento",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210831094831"
+}

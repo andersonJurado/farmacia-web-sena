@@ -1,0 +1,32 @@
+{
+  "farmaciaApp": {
+    "compraProducto": {
+      "home": {
+        "title": "Compra Productos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Compra Producto",
+        "createOrEditLabel": "Crear o editar Compra Producto",
+        "notFound": "Ningún Compra Productos encontrado"
+      },
+      "created": "Un nuevo Compra Producto ha sido creado con el identificador {{ param }}",
+      "updated": "Un Compra Producto ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Compra Producto ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Compra Producto {{ id }}?"
+      },
+      "detail": {
+        "title": "Compra Producto"
+      },
+      "id": "ID",
+      "cantidadUds": "Cantidad Uds",
+      "precioUdsCompra": "Precio Uds Compra",
+      "subTotal": "Sub Total",
+      "iva": "Iva",
+      "total": "Total",
+      "fechaVencimiento": "Fecha Vencimiento",
+      "lote": "Lote",
+      "producto": "Producto",
+      "compra": "Compra"
+    }
+  }
+}

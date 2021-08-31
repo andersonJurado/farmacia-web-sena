@@ -1,0 +1,123 @@
+//tablas reboot-farmacia-sueperior
+
+entity Cliente{
+	primerNombre String required
+    segundoNombre String
+    primerApellido String
+    segundoApellido String
+	primerTelefono String
+    segundoTelefono String
+}
+
+entity Compra{
+	nroFactura String required
+    fecha Instant
+}
+
+entity CompraProducto{
+	cantidadUds Double
+    precioUdsCompra Double
+    subTotal Double
+    iva Double
+    total Double
+    fechaVencimiento LocalDate
+    lote String
+}
+entity Departamento{
+	nombre String required
+}
+
+entity Laboratorio{
+	nombre String required 
+}
+
+entity LineaProducto{
+	nombre String required
+}
+
+entity Municipio{
+	nombre String required 
+}
+entity Presentacion{
+	nombre String required 
+}
+
+entity Producto{
+	nombreProducto String required
+    cantidad Integer
+    iva Double
+    precioUdsVenta Double
+    margenDeGanancia Double
+    invima String
+}
+entity Proveedor{
+	nombre String required 
+    primerTelefono String
+    segundoTelefono String
+}
+
+entity Genero{
+	nombre String required
+}
+
+entity Venta{
+	nroFactura String required
+  	fecha Instant
+}
+entity VentaProducto{
+	cantidad Integer
+    total Double
+}
+relationship ManyToOne{
+	Cliente{municipio(nombre)} to Municipio {cliente}
+    Proveedor{municpio(nombre)} to Municipio {proveedor}  
+
+    CompraProducto{producto(nombreProducto)} to Producto {compraProducto}
+    VentaProducto{producto(nombreProducto)} to Producto {ventaProducto}
+    
+    Venta{cliente(primerNombre)} to Cliente {venta}
+
+    Compra{proveedor(nombre)} to Proveedor {compra}
+}
+
+
+relationship OneToMany {
+
+	//Municipio{cliente} to Cliente{municipio(nombre)}
+	
+
+    Genero{cliente} to Cliente{genero(nombre)}
+
+    Compra{compraProducto} to CompraProducto{compra(nroFactura)}
+
+    Venta{ventaProducto} to VentaProducto{venta(nroFactura)}
+
+    Departamento{municipio} to Municipio {departamento(nombre)}
+
+    Presentacion{producto} to Producto{presentacion(nombre)}
+
+    Laboratorio{producto} to Producto{laboratorio(nombre)}
+
+    LineaProducto{producto} to Producto{lineaProducto(nombre)}	
+
+}
+//Extencion de la tabla user
+//No es necesario por el momento
+//relationship OneToOne {
+//  Cliente{cliente} to User
+//  Proveedor{proveedor} to User
+//}
+
+// SET PAGINATION OPTIONS:
+paginate all with pagination
+// paginate all with infinite-scroll
+
+// SET SERVICE OPTIONS:
+service all with serviceImpl
+//service all with serviceClass
+
+// DTO:
+dto all with mapstruct
+
+// FILTERING:
+filter *
