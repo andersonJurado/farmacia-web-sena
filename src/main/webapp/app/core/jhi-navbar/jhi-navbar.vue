@@ -29,6 +29,58 @@
             <font-awesome-icon icon="th-list" />
             <span class="no-bold" v-text="$t('global.menu.entities.main')">Entities</span>
           </span>
+          <b-dropdown-item to="/cliente">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.cliente')">Cliente</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/compra">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.compra')">Compra</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/compra-producto">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.compraProducto')">Compra Producto</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/departamento">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.departamento')">Departamento</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/laboratorio">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.laboratorio')">Laboratorio</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/linea-producto">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.lineaProducto')">Linea Producto</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/municipio">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.municipio')">Municipio</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/presentacion">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.presentacion')">Presentacion</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/producto">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.producto')">Producto</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/proveedor">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.proveedor')">Proveedor</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/genero">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.genero')">Genero</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/venta">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.venta')">Venta</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/venta-producto">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.ventaProducto')">Venta Producto</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
         <b-nav-item-dropdown
@@ -173,7 +225,7 @@
 
 .logo-img {
   height: 100%;
-  background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
+  background: url('../../../content/images/logo-farmacia-real.png') no-repeat center center;
   background-size: contain;
   width: 100%;
   filter: drop-shadow(0 0 0.05rem white);

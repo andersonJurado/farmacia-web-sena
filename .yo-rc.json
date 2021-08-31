@@ -42,6 +42,22 @@
     "jwtSecretKey": "Njc2NmJkYWYzMTIwZDMyYThlOGQ5YmVmMGVhMTdlOTBlMDkzM2JmYjJlOGE2MGJmYWJjYWQ0ZWUxOTlkN2U3ODZjODZkZDUyNjFmZGFiY2U0YzQwMGNlYmYyY2I1MmE0MzljYzVmNGQ4YjY3MWRiNDY3ZjI0Y2NlN2I2MmI5NGM=",
     "devServerPort": 9060,
     "clientPackageManager": "npm",
-    "languages": ["en", "es"]
+    "languages": ["en", "es"],
+    "entities": [
+      "Cliente",
+      "Compra",
+      "CompraProducto",
+      "Departamento",
+      "Laboratorio",
+      "LineaProducto",
+      "Municipio",
+      "Presentacion",
+      "Producto",
+      "Proveedor",
+      "Genero",
+      "Venta",
+      "VentaProducto"
+    ],
+    "lastLiquibaseTimestamp": 1630403320000
   }
 }

@@ -27,6 +27,19 @@ import TranslationService from '@/locale/translation.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
+import ClienteService from '@/entities/cliente/cliente.service';
+import CompraService from '@/entities/compra/compra.service';
+import CompraProductoService from '@/entities/compra-producto/compra-producto.service';
+import DepartamentoService from '@/entities/departamento/departamento.service';
+import LaboratorioService from '@/entities/laboratorio/laboratorio.service';
+import LineaProductoService from '@/entities/linea-producto/linea-producto.service';
+import MunicipioService from '@/entities/municipio/municipio.service';
+import PresentacionService from '@/entities/presentacion/presentacion.service';
+import ProductoService from '@/entities/producto/producto.service';
+import ProveedorService from '@/entities/proveedor/proveedor.service';
+import GeneroService from '@/entities/genero/genero.service';
+import VentaService from '@/entities/venta/venta.service';
+import VentaProductoService from '@/entities/venta-producto/venta-producto.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -85,6 +98,19 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
+    clienteService: () => new ClienteService(),
+    compraService: () => new CompraService(),
+    compraProductoService: () => new CompraProductoService(),
+    departamentoService: () => new DepartamentoService(),
+    laboratorioService: () => new LaboratorioService(),
+    lineaProductoService: () => new LineaProductoService(),
+    municipioService: () => new MunicipioService(),
+    presentacionService: () => new PresentacionService(),
+    productoService: () => new ProductoService(),
+    proveedorService: () => new ProveedorService(),
+    generoService: () => new GeneroService(),
+    ventaService: () => new VentaService(),
+    ventaProductoService: () => new VentaProductoService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

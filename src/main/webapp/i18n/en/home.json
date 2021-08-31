@@ -1,19 +1,19 @@
 {
   "home": {
-    "title": "Welcome, Java Hipster!",
-    "subtitle": "This is your homepage",
+    "title": "Welcome to Pharmacy",
+    "subtitle": "I hope you have a great time",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },
-    "question": "If you have any question on JHipster:",
+    "question": "If you have any questions about the system:",
     "link": {
-      "homepage": "JHipster homepage",
-      "stackoverflow": "JHipster on Stack Overflow",
-      "bugtracker": "JHipster bug tracker",
-      "chat": "JHipster public chat room",
-      "follow": "follow @jhipster on Twitter"
+      "homepage": "Norn homepage",
+      "stackoverflow": "Tecnical questions in stackoverflow",
+      "bugtracker": "To report a bug",
+      "chat": "Pharmacy public chat in discord",
+      "follow": "Follow @pharmacy Twitter"
     },
-    "like": "If you like JHipster, don't forget to give us a star on",
+    "like": "If you found nice, you can follow the project in the following repository of",
     "github": "GitHub"
   }
 }

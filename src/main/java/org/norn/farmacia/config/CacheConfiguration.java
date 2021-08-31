@@ -48,6 +48,32 @@ public class CacheConfiguration {
             createCache(cm, org.norn.farmacia.domain.User.class.getName());
             createCache(cm, org.norn.farmacia.domain.Authority.class.getName());
             createCache(cm, org.norn.farmacia.domain.User.class.getName() + ".authorities");
+            createCache(cm, org.norn.farmacia.domain.Cliente.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Cliente.class.getName() + ".ventas");
+            createCache(cm, org.norn.farmacia.domain.Compra.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Compra.class.getName() + ".compraProductos");
+            createCache(cm, org.norn.farmacia.domain.CompraProducto.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Departamento.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Departamento.class.getName() + ".municipios");
+            createCache(cm, org.norn.farmacia.domain.Laboratorio.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Laboratorio.class.getName() + ".productos");
+            createCache(cm, org.norn.farmacia.domain.LineaProducto.class.getName());
+            createCache(cm, org.norn.farmacia.domain.LineaProducto.class.getName() + ".productos");
+            createCache(cm, org.norn.farmacia.domain.Municipio.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Municipio.class.getName() + ".clientes");
+            createCache(cm, org.norn.farmacia.domain.Municipio.class.getName() + ".proveedors");
+            createCache(cm, org.norn.farmacia.domain.Presentacion.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Presentacion.class.getName() + ".productos");
+            createCache(cm, org.norn.farmacia.domain.Producto.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Producto.class.getName() + ".compraProductos");
+            createCache(cm, org.norn.farmacia.domain.Producto.class.getName() + ".ventaProductos");
+            createCache(cm, org.norn.farmacia.domain.Proveedor.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Proveedor.class.getName() + ".compras");
+            createCache(cm, org.norn.farmacia.domain.Genero.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Genero.class.getName() + ".clientes");
+            createCache(cm, org.norn.farmacia.domain.Venta.class.getName());
+            createCache(cm, org.norn.farmacia.domain.Venta.class.getName() + ".ventaProductos");
+            createCache(cm, org.norn.farmacia.domain.VentaProducto.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
